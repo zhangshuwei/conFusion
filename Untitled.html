@@ -1,0 +1,13 @@
+<a type="button" class="btn btn-warning btn-block"
+                    data-toggle="modal" data-target="#reserveModal">Reserve Table</a>
+<script>
+        $(document).ready(function(){
+            $("#reserveModal").modal( { keyboard: false } );
+            $("#reservebutton").click(function(){
+                $("#reserveModal").modal('show');
+            });
+            $("#cancel").click(function(){
+                $("#reserceModal").modal('hide');
+            });
+        });
+    </script>
